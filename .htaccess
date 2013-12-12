@@ -1,0 +1,13 @@
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de reecriture d'URL :
+RewriteEngine on
+
+#--------------------------------------------------
+# Regles de reecriture d'URL :
+#--------------------------------------------------
+
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^resource/ - [L]
+RewriteRule .* index.php [L]

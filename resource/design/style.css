@@ -1,0 +1,135 @@
+body{
+    margin : 0;
+    background-color : #111;
+	font-family: "Segoe UI", sans-serif;
+	color : #fff;
+}
+
+.main-container{
+	display : table;
+	width : 100%;
+	box-sizing : border-box;
+	vertical-align : top;
+}
+
+/* HEADER */
+.head-container{
+    height : 200px;
+    background : url('header_bg.png') no-repeat left center;
+    background-size : 100%;
+}
+
+.head-container h1{
+    margin : 0;
+    text-indent : -9999px;
+    width : 0; height : 0;
+}
+
+/* MAINMENU */
+.mainmenu-container{
+    height : 36px;
+    background-color : rgba(255,255,255,0.2);
+    box-shadow : #fff 0px 0px 16px inset, #000 0px 0px 16px;
+	background-image : url('rice.jpg');
+	background-size : 100% auto;
+	background-attachment : fixed;
+}
+
+.mainmenu{
+    padding : 0;
+    margin : 0;
+    height : 36px;
+    font-size : 0;
+}
+
+.mainmenu li{
+    display : inline-block;
+}
+
+.mainmenu li a{
+    display : inline-block;
+    font-size : 18px;
+    line-height : 36px;
+    text-decoration : none;
+    color : #000;
+    width : 150px;
+    text-align : center;
+    text-shadow : rgba(255,255,255,0.5) 0px 1px;
+}
+
+.mainmenu li a:hover{
+	background-color : rgba(255,125,0,0.5)
+}
+
+/* CONTENT */
+
+.content {
+	box-sizing : border-box;
+	display : table-cell;
+	padding-top : 12px;
+    vertical-align : top;
+}
+
+.content-section{
+	background-attachment : fixed;
+    background-size : 100% auto;
+	padding : 12px;
+    margin : 0px 0;
+    box-shadow : #111 0px 0px 2px 4px inset;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+	box-sizing : border-box;
+	width : 250px;
+    background-color : rgba(255,0,0,0.5);
+	display : table-cell;
+	padding : 12px;
+    vertical-align : top;
+    border : #500 solid 2px;
+	box-shadow : #300 0px 0px 0px 1px inset;
+	background-image : url('1.jpg');
+}
+
+/* LOGINFORM */
+
+.sidebar h2{
+	text-align: center;
+}
+
+
+
+/* USERBOX */
+
+
+.datebox{
+	text-align : right;
+	font-style : italic;
+	color : #ccc;
+	font-size : 0.8em;
+}
+/* SINGLE BACKGROUNDS */
+#content-register{
+	background-image : url('1.jpg');
+}
+
+#content-welcome{
+	background-image : url('top.jpg');
+}
+
+#content-howtoplay{
+	background-image : url('mid.jpg');
+}
+
+#content-news{
+	background-image : url('bot.jpg');
+}
+
+#content-us{
+	background-image : url('1.jpg');
+}
+
+#content-findus{
+	background-image : url('rice.jpg');
+}
