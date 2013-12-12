@@ -62,6 +62,7 @@ class Account{
             $query->bindValue(':username', $username, PDO::PARAM_STR);
             $query->bindValue(':password', Account::hashPass($unhashed), PDO::PARAM_STR);
             $query->execute();
+            return true;
         }
         catch(Exception $e)
         {
