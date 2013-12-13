@@ -113,7 +113,7 @@ function genlink($s){
 
 //varèdump la variable selon la configuration.
 function debug($var, $key = 1){
-    if(C::debug_mode == 1 || C::debug_mode == $key){
+    if(C::debug_mode === true || C::debug_mode === $key){
         var_dump($var);
     }
 }

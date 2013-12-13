@@ -7,7 +7,7 @@ class C{
 
     const site_root_uri = '/TDCG';
 
-    const site_name = 'The DusKcat Game';
+    const site_name = 'The DuskCat Game';
 
     const db_host = 'localhost';
     const db_user = 'root';
@@ -17,7 +17,7 @@ class C{
     const ctrl_dir = '/ctrl/';
     const design_dir = '/resource/design/';
     
-    const debug_mode = false; //false ou 0 signifie aucun debug, true ou 1 signifie tous, une autre valeur pour n'afficher que certains debugs.
+    const debug_mode = false; //false signifie aucun debug, true signifie tous, une autre valeur pour n'afficher que certains debugs.
 
 }
 ?>
