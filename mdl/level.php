@@ -197,11 +197,11 @@ class Level{
             $res = $query->fetch(PDO::FETCH_ASSOC);
             $nb_available = $res['nblvl'];
             
-            /* */  echo '$nb_available = '.$nb_available.'<br/>';
+            /* */  debug($nb_available, 'level');
             
             $nb_to_unlock -= $nb_available;
             
-            /* */  echo '$nb_to_unlock = '.$nb_to_unlock.'<br/>';
+            /* */  debug($nb_to_unlock, 'level');
             
             // ===== Etape 2 : On débloque les $nb_to_unlock prochains niveaux
             
@@ -216,7 +216,7 @@ class Level{
 						   ORDER BY l.orderlevel
 						   LIMIT 0, '.$nb_to_unlock;
                     
-            /* */  echo '$sql_select = '.$sql_select.'<br/>';
+            /* */  debug($sql_select, 'level');
                     
             $sql_insert = 'INSERT INTO resolve
                                 (idaccount, idlevel, state, solution, link)
@@ -227,7 +227,7 @@ class Level{
             $query->execute();
             $res = $query->fetchAll(PDO::FETCH_ASSOC);
             
-            /* */ echo '$res = '; var_dump($res);
+            /* */ debug($res, 'level');
             
             $query = pdo()->prepare($sql_insert);
             
@@ -237,9 +237,9 @@ class Level{
                 $solution = '';
                 for($i=0 ; $i<10 ; ++$i) $solution.= (string) mt_rand(0, 9);
                 $link = md5(mt_rand());
-                var_dump($solution);
-                var_dump($link);
-                var_dump($lev);
+                debug($solution, 'level');
+                debug($link, 'level');
+                debug($lev, 'level');
                 $query->bindValue(':idaccount', $idaccount, PDO::PARAM_INT);
                 $query->bindValue(':idlevel', $lev['idlevel'], PDO::PARAM_INT);
                 $query->bindValue(':state', LevelUserState::AVAILABLE, PDO::PARAM_INT);
@@ -255,7 +255,7 @@ class Level{
                 $nb_unlocked++;
             }
             
-            /* */  echo '$nb_unlocked = '.$nb_unlocked.'<br/>';
+            /* */  debug($nb_unlocked, 'level');
             
             return $nb_unlocked;
         }

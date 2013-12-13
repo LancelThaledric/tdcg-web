@@ -18,9 +18,6 @@ if($level->isLoaded()){
     if($level->state() == LevelUserState::UNAVAILABLE){
         $_SESSION['msg'][] = 'Ce niveau n\'est pas disponible pour vous.';
     }
-    if($level->state() == LevelUserState::VALIDATED){
-        $solved = true;
-    }
     elseif($level->solution() != $args['solution']){
         $_SESSION['msg'][] = 'Ce n\'est pas la bonne solution.';
     }
@@ -40,7 +37,7 @@ if(!$solved) redirectPreviousPage();
 
 // à partir d'ici, seuls les joueurs ayant vraiment résolu le niveaux verrront ce qui suit. Ceux à qui leur tentative a échoué ont été redirigés.
 $unlockret = Level::unlockLevels($level->idaccount());
-var_dump($unlockret);
+debug($unlockret, 100);
 
 $£solved = $level->getIncludeSolvedLevel();
 $£msgbox = getrender('ctrl/inc/msg.php');
