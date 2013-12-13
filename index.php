@@ -30,9 +30,9 @@ if(!isset($_SESSION['msg'])) $_SESSION['msg'] = array();
 
 //Var_dump de debug
 /**///Ne pas faire confiance à ['redirect_url'], la valeur affichée est la valeur de la page précédente. La nouvelle valeur est calculée en fin de script.
-/**/ echo '<b>$_SESSION</b>'; var_dump($_SESSION);
-/**/ echo '<b>$inc</b>'; var_dump($inc);
-/**/ echo '<b>$args</b>'; var_dump($args);
+/**/ debug($_SESSION, 2);
+/**/ debug($inc, 2);
+/**/ debug($args, 2);
 
 //On inclus la page routée. C'est ici que s'effectue le rendu de la page, où l'on appelle récursivement tous les contrôleurs nécessaires à la page.
 ob_start();
@@ -42,6 +42,6 @@ ob_end_flush();
 //Post-genration : 
 //On calcule la nouvelle url de redirection, pour la prochaine page.
 $_SESSION['redirect_url'] = getRedirectUrl();
-/**/ echo '<b>REDIRECT : </b>'; var_dump($_SESSION['redirect_url']);
+/**/ debug($_SESSION['redirect_url'], 3);
 
 ?>

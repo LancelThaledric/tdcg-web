@@ -106,8 +106,16 @@ function cssdir(){
     return C::site_root_uri . C::design_dir;
 }
 
+//génère un lien absolu. A utiliser pour chaque url destinée au client.
 function genlink($s){
     return C::site_root_uri . $s;
+}
+
+//varèdump la variable selon la configuration.
+function debug($var, $key = 1){
+    if(C::debug_mode == 1 || C::debug_mode == $key){
+        var_dump($var);
+    }
 }
 
 ?>
