@@ -35,6 +35,11 @@ $routes['/play/?'] = array('', 'gamemenu.php');
 $routes['/level/(?P<key>[^/\s]*)/?'] = array('', 'level.php');
 $routes['/level/(?P<key>[^/\s]*)/(?P<solution>.*)/?'] = array('', 'solve.php');
 
+//Forum
+$routes['/forum/?'] = array('', 'forumindex.php');
+$routes['/forum/(?P<category>[^/\s]*)/?'] = array('', 'forumcategory.php');
+$routes['/forum/post/(?P<postid>\d+)/?'] = array('', 'forumpost.php');
+
 //Contact
 $routes['/contact/?'] = array('', 'contact.php');
 $default_route = array('', '404.php');
