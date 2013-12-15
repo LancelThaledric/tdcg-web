@@ -27,6 +27,7 @@ else{
 }
 
 $£msgbox = getrender('ctrl/inc/msg.php');
+$£leveltoolbar = getrender('ctrl/inc/leveltoolbar.php');
 
 //render
 

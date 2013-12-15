@@ -7,7 +7,7 @@
     */
 ?>
 <div id="leveltoolbar" class="leveltoolbar">
-    <form id="formsolution" onsubmit="checksolution()">
+    <form id="formsolution" onsubmit="checkSolution()">
         <input type="text" placeholder="Réponse" name="inputsolution" id="inputsolution"/>
         <input type="submit" value="Check !"/>
     </form>

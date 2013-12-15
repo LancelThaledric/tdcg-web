@@ -8,7 +8,7 @@
     params :
 */
 
-$£js_leveltoolbar = genlink('ressource/js/leveltoolbar.js');
+$£js_leveltoolbar = genlink('/resource/js/leveltoolbar.js');
 
 //render
 
