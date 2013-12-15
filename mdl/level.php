@@ -266,7 +266,7 @@ class Level{
     }
     
     //retourne le rendu du level.
-    public function getIncludeLevel($level){
+    public function getIncludeLevel(){
         return getrender('ctrl/levels/'.$this->_filename.'/index.php');
     }
     

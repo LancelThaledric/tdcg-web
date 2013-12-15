@@ -13,7 +13,7 @@
 	<ul id="mainmenu" class="mainmenu">
 		<li><a href="<?php echo $£link_Accueil; ?>">Accueil</a></li>
 		<li><a href="<?php echo $£link_Jouer; ?>">Jouer !</a></li>
-		<li><a href="#">Forum</a></li>
+		<li><a href="<?php echo $£link_Forum; ?>">Forum</a></li>
 		<li><a href="<?php echo $£link_Contact; ?>">Contact</a></li>
 	</ul>
 </nav>
