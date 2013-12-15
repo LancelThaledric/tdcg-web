@@ -142,3 +142,8 @@ body{
 	font-style : italic;
 	color : #ccc;
 	font-size : 0.8em;
+}
+
+.center{
+	text-align : center;
+}

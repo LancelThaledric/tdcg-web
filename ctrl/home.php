@@ -17,8 +17,7 @@ $£header = getrender('ctrl/inc/header.php');
 $£sidebar = getrender('ctrl/inc/sidebar.php');
 $£footer = getrender('ctrl/inc/footer.php');
 
-$£logintest = new Account();
-$£logintest->login('sdgf', 'sdfg');
+$£register_link = genlink('/register/');
 
 //render
 
