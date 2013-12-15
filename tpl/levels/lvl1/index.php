@@ -26,6 +26,12 @@
             
             <?php echo $£sidebar; ?>
         </div>
+		
+		<!-- HEEEEY BROTHER! Tu as réussi à trouver le code source! Nous sommes fiers de toi.
+		Puisque c'est la première énigme et qu'il t'en reste pas mal d'autres, voici la première solution.
+		La solution 1 est : -->
+		<?php echo $level->solution();  ?>
+		
     </body>
 </html>
 

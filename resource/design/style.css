@@ -102,12 +102,14 @@ body{
 
 /* USERBOX */
 
+.userbox{
+	
+}
 
-.datebox{
-	text-align : right;
-	font-style : italic;
-	color : #ccc;
-	font-size : 0.8em;
+.userbox form{
+	text-align : center;
+}
+
 }
 /* SINGLE BACKGROUNDS */
 #content-register{
@@ -133,3 +135,10 @@ body{
 #content-findus{
 	background-image : url('rice.jpg');
 }
+
+
+.datebox{
+	text-align : right;
+	font-style : italic;
+	color : #ccc;
+	font-size : 0.8em;
