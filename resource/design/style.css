@@ -92,6 +92,7 @@ body{
 	background-image : url('1.jpg');
 }
 
+
 /* LOGINFORM */
 
 .sidebar h2{
@@ -146,4 +147,20 @@ body{
 
 .center{
 	text-align : center;
+}
+
+/* CONTACT */
+
+.cell-container{
+	display : table;
+	width : 100%;
+}
+
+.cell{
+	vertical-align : top;
+	display : table-cell;
+}
+
+.shadowed{
+	box-shadow : #000 4px 4px 10px -2px;
 }
