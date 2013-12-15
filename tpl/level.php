@@ -12,5 +12,6 @@
     <body>
         <?php echo $£msgbox; ?>
         <?php echo $£level; ?>
+        <?php echo $£leveltoolbar; ?>
     </body>
 </html>
