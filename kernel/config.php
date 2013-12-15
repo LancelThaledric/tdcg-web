@@ -17,7 +17,7 @@ class C{
     const ctrl_dir = '/ctrl/';
     const design_dir = '/resource/design/';
     
-    const debug_mode = false; //false signifie aucun debug, true signifie tous, une autre valeur pour n'afficher que certains debugs.
+    const debug_mode = 2; //false signifie aucun debug, true signifie tous, une autre valeur pour n'afficher que certains debugs.
 
 }
 ?>

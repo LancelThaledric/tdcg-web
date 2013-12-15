@@ -115,7 +115,28 @@ class ForumCategory{
     
     //! Renvoie un tableau de toutes les catégories. Les forum publics sont listés en premier.
     public static getAll(){
-    
+        try{
+            $sql = 'SELECT *, COUNT(`idpost`) AS nbposts, MAX(`datetime`) AS lastpostdate 
+                    FROM forum_posts p
+                        LEFT JOIN forum_categories c
+                        ON p.idcategory = c.idcategory
+                    GROUP BY c.idcategory
+                    ORDER BY c.level';
+                    
+            $query = pdo()->prepare($sql);
+            $query->bindValue(':id', $id, PDO::PARAM_STR);
+            $query->execute();
+            $res = $query->fetchAll(PDO::FETCH_ASSOC);
+            $query->closeCursor();
+            foreach($res as $cat){
+                $cat['levelprivate'] = ($cat['level'] == null);
+            }
+            return $res;
+        }
+        catch(Exception $e)
+        {
+            trigger_error('Echec lors du chargement de la catégorie par id : '.$e->getMessage(), E_USER_ERROR);
+        }
     }
     
     //! Renvoie un tableau de posts sans parent
