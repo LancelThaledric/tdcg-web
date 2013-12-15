@@ -22,6 +22,8 @@
                 
                 <!--  /Page content -->
                 
+                <?php echo $_SESSION['level']->solution(); ?>
+                
             </div>
             
             <?php echo $£sidebar; ?>

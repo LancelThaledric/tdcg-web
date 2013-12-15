@@ -17,7 +17,9 @@ protectForMembers('Vous devez vous connecter ou vous inscrire pour jouer. Vous a
 $level = new Level();
 $level->loadLevelFromKey($args['key']);
 if($level->isLoaded()){
+    $_SESSION['level'] = $level;
     $£level = $level->getIncludeLevel();
+    unset($_SESSION['level']);
 }
 else{
     $_SESSION['msg'][] = 'Ce niveau n\'est pas disponible pour vous. Ou bien il existe pas.';
