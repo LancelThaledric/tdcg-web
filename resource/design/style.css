@@ -2,7 +2,7 @@ body{
     margin : 0;
     background-color : #111;
 	font-family: "Segoe UI", sans-serif;
-	color : #fff;
+	color : #bbb;
 }
 
 .main-container{
@@ -59,7 +59,7 @@ body{
 	background-color : rgba(255,125,0,0.5);
     background-image : url('bg_mainmenu_hover.png');
     box-shadow : #f00 0px 0px 2px 1px inset, #000 0px 0px 10px inset, #000 0px 0px 10px 2px;
-    color : #ffd130;
+    color : #e7bf35;
     text-shadow : #8f6500 0px 1px 0px;
 }
 
@@ -74,10 +74,8 @@ body{
 
 .content-section{
 	background-attachment : fixed;
-    background-size : 100% auto;
 	padding : 12px;
     margin : 0px 0;
-    box-shadow : #111 0px 0px 2px 4px inset;
 }
 
 /* SIDEBAR */
@@ -90,6 +88,8 @@ body{
 	padding : 12px;
     vertical-align : top;
 	background-image : url('bg_sidebar.png');
+    color : #ffc9a1;
+    text-shadow : #410000 0px -1px;
 }
 
 
@@ -111,6 +111,15 @@ body{
 	text-align : center;
 }
 
+/* FOOTER */
+.main-footer{
+    background-image : url('bg_footer.png');
+    border : solid 1px black;
+    box-shadow : #222 0px 1px inset;
+    text-align : center;
+    padding : 6px;
+}
+
 }
 /* SINGLE BACKGROUNDS */
 #content-register{
@@ -118,15 +127,36 @@ body{
 }
 
 #content-welcome{
-	background-image : url('top.jpg');
+	background-image : url('bg_content_welcome.png');
+    background-position : top left;
+    background-size : cover;
+    text-shadow : #000 0px 0px 6px, #000 0px 0px 6px;
+    box-shadow : #111 0px 12px 12px -6px inset;
+    border-bottom : solid black 1px;
+    color : #eade9e;
 }
 
 #content-howtoplay{
 	background-image : url('mid.jpg');
+    background-position : bottom left;
+    background-size : cover;
+    
+    text-shadow : #000 0px 0px 6px, #000 0px 0px 6px;
+    box-shadow : #000 0px 0px 16px 6px inset;
+    
+    border-top : solid #530 1px;
+    border-bottom : solid #224621 1px;
+    color : #cddbe3;
+
 }
 
 #content-news{
 	background-image : url('bot.jpg');
+    background-position : bottom left;
+    
+    text-shadow : #000 0px 0px 6px, #000 0px 0px 6px;
+    border-top : solid black 1px;
+    color : #abbfa6;
 }
 
 #content-us{
@@ -163,4 +193,12 @@ body{
 
 .shadowed{
 	box-shadow : #000 4px 4px 10px -2px;
+}
+
+a{
+    color : #ffc938;
+    text-decoration : none;
+}
+a:hover{
+    color : #fff6d0;
 }
