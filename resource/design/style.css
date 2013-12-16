@@ -28,11 +28,9 @@ body{
 /* MAINMENU */
 .mainmenu-container{
     height : 36px;
-    background-color : rgba(255,255,255,0.2);
-    box-shadow : #fff 0px 0px 16px inset, #000 0px 0px 16px;
-	background-image : url('rice.jpg');
-	background-size : 100% auto;
-	background-attachment : fixed;
+    background-color : #000;
+    background-image : url('bg_mainmenu.png');
+    box-shadow : #000 0px 0px 16px;
 }
 
 .mainmenu{
@@ -51,14 +49,18 @@ body{
     font-size : 18px;
     line-height : 36px;
     text-decoration : none;
-    color : #000;
+    color : #888;
     width : 150px;
     text-align : center;
-    text-shadow : rgba(255,255,255,0.5) 0px 1px;
+    text-shadow : rgba(255,255,255,0.2) 0px 1px;
 }
 
 .mainmenu li a:hover{
-	background-color : rgba(255,125,0,0.5)
+	background-color : rgba(255,125,0,0.5);
+    background-image : url('bg_mainmenu_hover.png');
+    box-shadow : #f00 0px 0px 2px 1px inset, #000 0px 0px 10px inset, #000 0px 0px 10px 2px;
+    color : #ffd130;
+    text-shadow : #8f6500 0px 1px 0px;
 }
 
 /* CONTENT */
@@ -87,9 +89,7 @@ body{
 	display : table-cell;
 	padding : 12px;
     vertical-align : top;
-    border : #500 solid 2px;
-	box-shadow : #300 0px 0px 0px 1px inset;
-	background-image : url('1.jpg');
+	background-image : url('bg_sidebar.png');
 }
 
 
