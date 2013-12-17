@@ -34,14 +34,14 @@ function routing($url, $routes, $default, &$args){
     
     //On a note array contenant la route, il faut maintenant générer l'uri.
     
-    return genUri($selected);
+    return genUri($selected, true);
 }
 
 //génère l'URI de la route envoyée en paramètre. Renvoie true si la route pointe sur une page, False sinon (si elle pointe sur un script redirigé).
-function genUri($route){
-    $res = C::ctrl_dir . $route[0]. $route[1];
-    
-    return $res;
+function genUri($route, $urlInterne = false){
+	if(!$urlInterne)
+		return C::site_root_uri . C::ctrl_dir . $route[0]. $route[1];
+    return $_SERVER['DOCUMENT_ROOT'] . C::site_root_uri . C::ctrl_dir . $route[0]. $route[1];;
 }
 
 //! Permet d'inclure un contrôleur.

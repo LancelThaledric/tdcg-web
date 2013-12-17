@@ -178,7 +178,7 @@ class Level{
     //débloques les niveaux disponibles
     public static function unlockLevels($idaccount){
         $nb_to_unlock = 3;
-    
+		
         try{
             //Etape 1 : on compte combien de niveaux sont disponibles pour le joueur.
             //Etape 1 et demi : il faut débloquer 3 - n nivaux, n étant le nb de niveaux disponibles trouvé juste avant.
@@ -204,7 +204,7 @@ class Level{
             /* */  debug($nb_to_unlock, 'level');
             
             // ===== Etape 2 : On débloque les $nb_to_unlock prochains niveaux
-            
+           
             $sql_select = 'SELECT *
                            FROM levels l
 						   WHERE NOT EXISTS (
@@ -212,9 +212,10 @@ class Level{
 							   FROM resolve r, accounts a
 							   WHERE l.idlevel = r.idlevel
 							   AND r.idaccount = a.idaccount
+							   AND a.idaccount=:idaccount
 						   )
 						   ORDER BY l.orderlevel
-						   LIMIT 0, '.$nb_to_unlock;
+						   LIMIT 0, '.$nb_to_unlock; 
                     
             /* */  debug($sql_select, 'level');
                     
@@ -224,6 +225,7 @@ class Level{
                                 (:idaccount, :idlevel, :state, :solution, :link)';
             
             $query = pdo()->prepare($sql_select);
+            $query->bindValue(':idaccount', $idaccount, PDO::PARAM_INT);
             $query->execute();
             $res = $query->fetchAll(PDO::FETCH_ASSOC);
             
