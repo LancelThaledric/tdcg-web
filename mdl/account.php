@@ -62,7 +62,8 @@ class Account{
             $query->bindValue(':username', $username, PDO::PARAM_STR);
             $query->bindValue(':password', Account::hashPass($unhashed), PDO::PARAM_STR);
             $query->execute();
-            return true;
+            if($query->rowCount() != 1) return false;
+            else return pdo()->lastInsertId();
         }
         catch(Exception $e)
         {

@@ -2,7 +2,7 @@ body{
     margin : 0;
     background-color : #111;
 	font-family: "Segoe UI", sans-serif;
-	color : #fff;
+	color : #bbb;
 }
 
 .main-container{
@@ -28,11 +28,9 @@ body{
 /* MAINMENU */
 .mainmenu-container{
     height : 36px;
-    background-color : rgba(255,255,255,0.2);
-    box-shadow : #fff 0px 0px 16px inset, #000 0px 0px 16px;
-	background-image : url('rice.jpg');
-	background-size : 100% auto;
-	background-attachment : fixed;
+    background-color : #000;
+    background-image : url('bg_mainmenu.png');
+    box-shadow : #000 0px 0px 16px;
 }
 
 .mainmenu{
@@ -51,14 +49,18 @@ body{
     font-size : 18px;
     line-height : 36px;
     text-decoration : none;
-    color : #000;
+    color : #888;
     width : 150px;
     text-align : center;
-    text-shadow : rgba(255,255,255,0.5) 0px 1px;
+    text-shadow : rgba(255,255,255,0.2) 0px 1px;
 }
 
 .mainmenu li a:hover{
-	background-color : rgba(255,125,0,0.5)
+	background-color : rgba(255,125,0,0.5);
+    background-image : url('bg_mainmenu_hover.png');
+    box-shadow : #f00 0px 0px 2px 1px inset, #000 0px 0px 10px inset, #000 0px 0px 10px 2px;
+    color : #e7bf35;
+    text-shadow : #8f6500 0px 1px 0px;
 }
 
 /* CONTENT */
@@ -72,10 +74,8 @@ body{
 
 .content-section{
 	background-attachment : fixed;
-    background-size : 100% auto;
 	padding : 12px;
     margin : 0px 0;
-    box-shadow : #111 0px 0px 2px 4px inset;
 }
 
 /* SIDEBAR */
@@ -87,9 +87,9 @@ body{
 	display : table-cell;
 	padding : 12px;
     vertical-align : top;
-    border : #500 solid 2px;
-	box-shadow : #300 0px 0px 0px 1px inset;
-	background-image : url('1.jpg');
+	background-image : url('bg_sidebar.png');
+    color : #ffc9a1;
+    text-shadow : #410000 0px -1px;
 }
 
 
@@ -111,22 +111,56 @@ body{
 	text-align : center;
 }
 
+/* FOOTER */
+.main-footer{
+    background-image : url('bg_footer.png');
+    border : solid 1px black;
+    box-shadow : #222 0px 1px inset;
+    text-align : center;
+    padding : 6px;
 }
+
 /* SINGLE BACKGROUNDS */
 #content-register{
-	background-image : url('1.jpg');
+	background-image : url('bg_content_register.png');
+    border-top : solid #550000 1px;
+    color : #ffc0c0;
+    box-shadow : #000 0px 1px 0px inset;
 }
 
 #content-welcome{
-	background-image : url('top.jpg');
+	background-image : url('bg_02.jpg');
+    background-position : top left;
+    background-size : cover;
+    text-shadow : #000 0px 0px 6px, #000 0px 0px 6px;
+    box-shadow : #111 0px 12px 12px -6px inset;
+    border-bottom : solid black 1px;
+
+    color : #eade9e;
 }
 
 #content-howtoplay{
-	background-image : url('mid.jpg');
+	background-image : url('bg_01.jpg');
+    background-position : bottom left;
+    background-size : cover;
+    
+    text-shadow : #000 0px 0px 6px, #000 0px 0px 6px;
+    box-shadow : #000 0px 0px 16px 6px inset;
+    
+    border-top : solid #8e4900 1px;
+    border-bottom : solid #773a02 1px;
+    color : #ffc6c6;
+
 }
 
 #content-news{
-	background-image : url('bot.jpg');
+	background-image : url('bg_03.jpg');
+    background-position : top left;
+    background-size : cover;
+    
+    text-shadow : #000 0px 0px 6px, #000 0px 0px 6px;
+    border-top : solid black 1px;
+    color : #abbfa6;
 }
 
 #content-us{
@@ -173,4 +207,24 @@ p.pnomargin{
 
 .shadowed{
 	box-shadow : #000 4px 4px 10px -2px;
+}
+
+a{
+    color : #ffc938;
+    text-decoration : none;
+}
+a:hover{
+    color : #fff6d0;
+}
+
+input{
+    border : solid 1px #000;
+    box-shadow : #000 0px 0px 4px inset;
+    background-color : rgba(0,0,0,0.7);
+    color : #a28522;
+    padding : 4px 8px;
+}
+
+input[type="submit"], input[type="button"]{
+    
 }

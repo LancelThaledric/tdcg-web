@@ -28,11 +28,13 @@ if($_POST['password'] != $_POST['password_confirm']){
 
 $regres = Account::insertAccount($_POST['email'],$_POST['username'], $_POST['password']);
 
-if($regres){
-    $_SESSION['msg'][] = 'Inscription validée, vous faites désormais partie de notre secte. Félicitations !';
+
+if($regres === false){
+    $_SESSION['msg'][] = 'Le pseudo et/ou l\'adresse mail existe déjà. Sorry!';
 }
 else{
-    $_SESSION['msg'][] = 'Le pseudo et/ou l\'adresse mail existe déjà. Sorry!';
+    Level::unlockLevels($regres);
+    $_SESSION['msg'][] = 'Inscription validée, vous faites désormais partie de notre secte. Félicitations !';
 }
 
 //redirection:
