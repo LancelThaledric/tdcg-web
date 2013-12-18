@@ -149,6 +149,16 @@ body{
 	text-align : center;
 }
 
+.right{
+	text-align : right;
+}
+.little{
+	font-size : 0.9em;
+}
+p.pnomargin{
+	margin : 0;
+}
+
 /* CONTACT */
 
 .cell-container{
