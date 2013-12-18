@@ -33,9 +33,7 @@ else{
     $_SESSION['msg'][] = 'Ce niveau n\'est pas disponible pour vous. Ou bien il existe pas. Niveau non chargé.';
 }
 
-//if(!$solved) redirectPreviousPage();
-echo 'MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEERDE !';
-exit();
+if(!$solved) redirectPreviousPage();
 
 // à partir d'ici, seuls les joueurs ayant vraiment résolu le niveaux verrront ce qui suit. Ceux à qui leur tentative a échoué ont été redirigés.
 $unlockret = Level::unlockLevels($level->idaccount());

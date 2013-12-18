@@ -10,7 +10,7 @@
 */
 
 require_once 'mdl/account.php';
-require_once 'mdl/forum_category.php';
+//require_once 'mdl/forum_category.php';
 
 $£msgbox = getrender('ctrl/inc/msg.php');
 
@@ -19,8 +19,8 @@ $£sidebar = getrender('ctrl/inc/sidebar.php');
 $£footer = getrender('ctrl/inc/footer.php');
 
 //forum
-$categories = ForumCategory::getAll();
-debug($categories, 'cat');
+//$categories = ForumCategory::getAll();
+//debug($categories, 'cat');
 
 
 //render

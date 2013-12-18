@@ -11,7 +11,7 @@ class C{
 
     const db_host = 'localhost';
     const db_user = 'root';
-    const db_pass = 'TaleiaNosset-94';
+    const db_pass = '';
     const db_dbname = 'duskcat_db';
     
     const ctrl_dir = '/ctrl/';

@@ -18,6 +18,8 @@
                 
                 <!-- Page content -->
                 
+                <h1>Comming soon !</h1>
+                
                 <!--  /Page content -->
                 
             </div>
