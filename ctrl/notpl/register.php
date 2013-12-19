@@ -35,6 +35,7 @@ if($regres === false){
 else{
     Level::unlockLevels($regres);
     $_SESSION['msg'][] = 'Inscription validée, vous faites désormais partie de notre secte. Félicitations !';
+    unset($_SESSION['redirect_url']);   //pour rediriger vers l'accueil
 }
 
 //redirection:

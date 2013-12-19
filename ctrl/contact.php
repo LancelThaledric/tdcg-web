@@ -15,6 +15,7 @@ $£msgbox = getrender('ctrl/inc/msg.php');
 
 $£header = getrender('ctrl/inc/header.php');
 $£sidebar = getrender('ctrl/inc/sidebar.php');
+$£footer = getrender('ctrl/inc/footer.php');
 
 $£img_us = genlink('/resource/The%20DuskCat2.jpg');
 $£img_bab = genlink('/resource/bab.jpg');

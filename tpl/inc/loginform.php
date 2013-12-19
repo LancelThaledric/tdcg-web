@@ -9,12 +9,19 @@
 <div id="login-form" class="login-form">
 	<h2>Se connecter</h1>
 	<form method="post" action="<?php echo $£loginurl; ?>">
-		Pseudo :</br>
-        <input type="text" name="username" id="username"/></br>
-		Mot de passe :</br>
-        <input type="password" name="password" id="password" /></br>
-        <input type="submit" value="Connexion" />
+		<p>
+            Pseudo :</br>
+            <input type="text" name="username" id="username"/>
+        </p>
+        <p>
+            Mot de passe :</br>
+            <input type="password" name="password" id="password" />
+        </p>
+        <p class="center">
+            <input type="submit" value="Connexion" />
+        </p>
+        <p><a class="abutton" href="<?php echo $£registerurl; ?>">Pas encore inscrit ?</a></p>
     </form>
-	<a class="abutton" href="<?php echo $£registerurl; ?>">Pas encore inscrit ?</a>
+	
 	
 </div>

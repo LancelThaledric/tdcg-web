@@ -14,7 +14,7 @@ $_SESSION['msg'] = array();
 
 
 //render
-
-require 'tpl/inc/msg.php';
+if(!empty($£msg))
+    require 'tpl/inc/msg.php';
 
 ?>

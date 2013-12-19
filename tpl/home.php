@@ -65,16 +65,12 @@
 				
 				
 				<div class="content-section" id="content-news">
-					<h2>/!\ News</h2>
+					<h2>Copyrights</h2>
 					
-					<div class="datebox">#posté le 27/11/2013  </div>
-					<p> /!\ De nouveaux niveaux à débloquer !!!!!!!!! /!\</br></br>
-					</br></br>
-					/!\ Oui alors non, y a pas grand chose là mais c'est NARMOL ! /!\</br>
-					/!\ Nous sommes actuellement en travaux sur ce bloque /!\
-					
-					</br></br>
-					</p>
+					<div class="datebox">#posté le 19/12/2013  </div>
+					<p>Les illustrations en arrière-plan ont été faites par <a href="http://af-studios.deviantart.com/">Ana Fagarazzi</a>. Les couelurs y ont été modifiées.<br/>
+                    Merci à elle d'avoir mis en ligne ce stock d'images à disposition du monde.</p>
+                    <p>L'image de header est provisoire. Sera là plus tard une bannière faire en WebGL par nos soins. L'illustration présente nous vient de <a href="http://mikaelwang.deviantart.com/">Michael Wang</a>.</p>
 					
 					
 				</div>
