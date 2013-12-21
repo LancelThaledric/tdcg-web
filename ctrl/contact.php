@@ -20,6 +20,7 @@ $£footer = getrender('ctrl/inc/footer.php');
 $£img_us = genlink('/resource/The%20DuskCat2.jpg');
 $£img_bab = genlink('/resource/bab.jpg');
 $£img_val = genlink('/resource/val.jpg');
+$£img_tdclogo = genlink('/resource/tdc-logo-little.png');
 //render
 
 require 'tpl/contact.php';

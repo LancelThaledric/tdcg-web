@@ -10,7 +10,7 @@
         <?php
         foreach($£levels['available'] as $level){
             ?>
-            <li><a href="<?php echo genlink('/level/'.$level['link'].'/'); ?>"><?php echo $level['title'] ?></a></li>
+            <li><a href="<?php echo genlink('/level/'.$level['link'].'/'); ?>"><?php echo utf8_encode($level['title']); ?></a></li>
             <?php
         }
         ?>
@@ -21,7 +21,7 @@
         <?php
         foreach($£levels['finished'] as $level){
             ?>
-            <li><a href="<?php echo genlink('/level/'.$level['link'].'/'); ?>"><?php echo $level['title'] ?></a></li>
+            <li><a href="<?php echo genlink('/level/'.$level['link'].'/'); ?>"><?php echo utf8_encode($level['title']); ?></a></li>
             <?php
         }
         ?>

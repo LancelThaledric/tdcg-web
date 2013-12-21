@@ -11,8 +11,13 @@
 
 require_once 'mdl/account.php';
 
+$£msgbox = getrender('ctrl/inc/msg.php');
+
 $£header = getrender('ctrl/inc/header.php');
 $£sidebar = getrender('ctrl/inc/sidebar.php');
+$£footer = getrender('ctrl/inc/footer.php');
+
+$£register_link = genlink('/register/');
 
 //render
 

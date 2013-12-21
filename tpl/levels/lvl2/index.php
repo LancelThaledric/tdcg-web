@@ -6,32 +6,58 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Accueil - <?php echo C::site_name; ?></title>
+        <title>Second pas - <?php echo C::site_name; ?></title>
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo cssdir(); ?>style.css" />
     </head>
     <body>
-        <?php echo $£header; ?>
+    <?php echo $£msgbox; ?>
         <div id="main-container" class="main-container">
-        
             <div id="content" class="content">
+                <h1>Les commentaires HTML c'est bien...</h1>
+                <!-- Mais il n'y a pas. Sauf celui-ci.-->
+                <p>
+                    Il semblerait que cette page ne contienne pas de commentaires... Ou alors tout ce qui était commentaire ne l'est plus.<br/>
+                    Traditionnellement, nous avions l'habitude de mettre les solutions dans les commentaires HTML. C'était une mauvaise idée.<br/>
+                    <span style="visibility : hidden">
+                        Je sais que tu lis ça. Tu ne le vois pas, mais tu pas peut-être affiché la source avant même de lire la page en elle-même.
+                        Tricheur.
+                        Tricheuse.
+                    </span><br/>
+                    Dorénavant les commentaires, c'est Niet. A pu. Fini.<br/>
+                    <!-- Mensonge ! Tout n'est que mensonge ! -->
+                    <span style="display:none">
+                        Ce message est caché. C'est pas un commentaire. Mais ce n'est pas parce qu'il n'est pas en vert qu'il t'es inutile. Enfin si, celui-ci, il est inutile. Mais pas les autres !
+                    </span><br/>
+                </p>
                 
-                <!-- Page content -->
+                <p>
+                    Il semblerait que cette page ne contienne pas de commentaires... Ou alors tout ce qui était commentaire ne l'est plus.<br/>
+                    Traditionnellement, nous avions l'habitude de mettre les solutions dans les commentaires HTML. C'était une mauvaise idée.<br/>
+                    <span style="visibility : hidden">
+                        Tu lis ça. C'est certain. J'en ai la preuvre. Elle aussi.
+                    </span><br/>
+                    Dorénavant les commentaires, c'est Niet. A pu. Fini.<br/>
+                    <!-- Mensonge ! Tout n'est que mensonge ! -->
+                    <span style="display:none">
+                        Ce message est caché. C'est pas un commentaire. Mais ce n'est pas parce qu'il n'est pas en vert qu'il t'es inutile. Enfin si, celui-ci, il est inutile. Mais pas les autres !
+                    </span><br/>
+                </p>
                 
-                <p>Tu crois que t'es revenu sur la page d'accueil ? Haha ! Détrompe-toi ! Tu est bel et bien sur le premier niveau !!<br/>
-                Allez, bonne chance pour la suite et n'oublie pas ton seul et unique allié ! <u>KonrtolU !</u></p>
-                
-                <!--  /Page content -->
-                
-                
+                <p>
+                    Il semblerait que cette page ne contienne pas de commentaires... Ou alors tout ce qui était commentaire ne l'est plus.<br/>
+                    Traditionnellement, nous avions l'habitude de mettre les solutions dans les commentaires HTML. C'était une mauvaise idée.<br/>
+                    <span style="visibility : hidden ; width : <?php echo $_SESSION['level']->solution(); ?>">
+                        Tu lis ça. C'est certain. J'en ai la preuvre. Elle aussi.
+                    </span><br/>
+                    Dorénavant les commentaires, c'est Niet. A pu. Fini.<br/>
+                    <!-- Mensonge ! Tout n'est que mensonge ! -->
+                    <span style="display:none">
+                        Ce message est caché. C'est pas un commentaire. Mais ce n'est pas parce qu'il n'est pas en vert qu'il t'es inutile. Enfin si, celui-ci, il est inutile. Mais pas les autres !
+                    </span><br/>
+                </p>
                 
             </div>
-            
-            <?php echo $£sidebar; ?>
         </div>
-		
-		<!-- HEEEEY BROTHER! Tu as réussi à trouver le code source! Nous sommes fiers de toi.
-		Puisque c'est la première énigme et qu'il t'en reste pas mal d'autres, voici la première solution.
-		La solution 1 est : <?php echo $_SESSION['level']->solution(); ?> -->
 		
     </body>
 </html>

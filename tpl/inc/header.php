@@ -7,6 +7,7 @@
 <div id="head-container" class="head-container">
     <header id="main-header" class="main-header">
         <h1><?php echo C::site_name; ?></h1>
+        <div class="logo" id="logo"></div>
     </header>
 </div>
 <nav id="mainmenu-container" class="mainmenu-container">

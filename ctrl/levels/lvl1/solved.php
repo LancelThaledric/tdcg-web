@@ -11,6 +11,12 @@
 
 $£return_link = genlink('/play/');
 
+$£msgbox = getrender('ctrl/inc/msg.php');
+
+$£header = getrender('ctrl/inc/header.php');
+$£sidebar = getrender('ctrl/inc/sidebar.php');
+$£footer = getrender('ctrl/inc/footer.php');
+
 //render
 
 require 'tpl/levels/lvl1/solved.php';

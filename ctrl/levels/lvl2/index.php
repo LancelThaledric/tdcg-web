@@ -10,6 +10,7 @@
 */
 
 require_once 'mdl/account.php';
+$£msgbox = getrender('ctrl/inc/msg.php');
 
 //render
 

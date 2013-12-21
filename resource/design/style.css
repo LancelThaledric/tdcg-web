@@ -3,6 +3,7 @@ body{
     background-color : #111;
 	font-family: "Segoe UI", sans-serif;
 	color : #bbb;
+    min-width : 620px;
 }
 
 .main-container{
@@ -16,13 +17,20 @@ body{
 .head-container{
     height : 200px;
     background : url('header_bg.png') no-repeat left center;
-    background-size : 100%;
+    background-size : 100% auto;
 }
 
 .head-container h1{
     margin : 0;
     text-indent : -9999px;
     width : 0; height : 0;
+}
+
+.logo{
+    margin : 20px 0 0 50px;
+    width : 529px;
+    height : 120px;
+    background : url('tdcg-logo.png') no-repeat;
 }
 
 /* MAINMENU */
@@ -226,6 +234,18 @@ p.pnomargin{
 
 /* CONTACT */
 
+#banniere_us{
+    position : relative;
+    margin-bottom : 60px;
+}
+
+#us_tdc_banniere{
+    display : block;
+    position : absolute;
+    bottom : -60px;
+    left : 260px;
+}
+
 .cell-container{
 	display : table;
 	width : 100%;
@@ -235,10 +255,14 @@ p.pnomargin{
 	vertical-align : top;
 	display : table-cell;
 }
+.cell-50{
+	width : 50%;
+}
 
 .shadowed{
 	box-shadow : #000 4px 4px 10px -2px;
 }
+
 
 a{
     color : #ffc938;

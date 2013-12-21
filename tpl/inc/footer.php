@@ -6,6 +6,6 @@
 ?>
 <div id="foot-container" class="foot-container">
     <footer id="main-footer" class="main-footer">
-        <span id="footer-sitename" class="footer-sitename"><?php echo C::site_name; ?> - DuskCat Team</span>
+        <span id="footer-sitename" class="footer-sitename"><?php echo C::site_name; ?> - The DuskCat</span>
     </footer>
 </div>

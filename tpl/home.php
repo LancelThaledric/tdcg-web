@@ -22,7 +22,7 @@
                 <div class="content-section" id="content-welcome">
 					<h2>Bienvenue à toi !</h2>
 					
-					<div class="datebox">#posté le 27/11/2013</div>
+					<div class="datebox">#posté le 27/11/2018</div>
 					<p>Aaaaah te voilà enfin. Quoi? Tu penses être tombé sur cette page web par hasard? JE NE CROIS PAS, le destin t'a conduit ici et c'est pour y passer un très bon moment !</br></br>
 					
 					Tu as envie de t'amuser tout en faisant marcher tes méninges (mais pas trop non plus), voici LE JEU Web qu'il te faut: <strong>The DuskCat game</strong>.</br>
@@ -40,7 +40,7 @@
                 <div class="content-section" id="content-howtoplay">
 					<h2>Comment jouer ?</h2>
 					
-					<div class="datebox">#posté le 27/11/2013  </div>
+					<div class="datebox">#posté le 27/11/2024</div>
 					<p> Tout d'abord pour jouer il faut t'inscrire si ce n'est pas déjà fait : <a href="<?php echo $£register_link ?>">là</a>,
 					<a href="<?php echo $£register_link ?>">là</a> ou <a href="<?php echo $£register_link ?>">là</a>,
 					à toi de voir, tu choises. :)</br></br>
@@ -67,7 +67,7 @@
 				<div class="content-section" id="content-news">
 					<h2>Copyrights</h2>
 					
-					<div class="datebox">#posté le 19/12/2013  </div>
+					<div class="datebox">#posté dans la 4<sup>e</sup> dimension</div>
 					<p>Les illustrations en arrière-plan ont été faites par <a href="http://af-studios.deviantart.com/">Ana Fagarazzi</a>. Les couelurs y ont été modifiées.<br/>
                     Merci à elle d'avoir mis en ligne ce stock d'images à disposition du monde.</p>
                     <p>L'image de header est provisoire. Sera là plus tard une bannière faire en WebGL par nos soins. L'illustration présente nous vient de <a href="http://mikaelwang.deviantart.com/">Michael Wang</a>.</p>

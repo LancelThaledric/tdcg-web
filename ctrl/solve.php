@@ -40,7 +40,6 @@ $unlockret = Level::unlockLevels($level->idaccount());
 debug($unlockret, 100);
 
 $£solved = $level->getIncludeSolvedLevel();
-$£msgbox = getrender('ctrl/inc/msg.php');
 
 //render
 require 'tpl/solve.php';

@@ -56,7 +56,7 @@ class Account{
             }
             
             //si un compte n'existe aps déjà, on peu ajouter
-            $sql = 'INSERT INTO accounts(email, username, password, validationkey,  rang) values (:email, :username, :password, "'.Account::genKey().'", "'.AccountRang::UNVALID.'")';
+            $sql = 'INSERT INTO accounts(email, username, password, validationkey,  rang) values (:email, :username, :password, "'.Account::genKey().'", "'.AccountRang::PLAYER.'")';
             $query = pdo()->prepare($sql);
             $query->bindValue(':email', $email, PDO::PARAM_STR);
             $query->bindValue(':username', $username, PDO::PARAM_STR);
